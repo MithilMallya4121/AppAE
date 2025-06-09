@@ -21,7 +21,7 @@ function App() {
       // If not logged in, navigate to the login page
       navigate('/login');
     }
-  }, []);
+  }, [navigate]);
 
   const handleLoginSuccess = (username) => {
     setIsLoggedIn(true);
