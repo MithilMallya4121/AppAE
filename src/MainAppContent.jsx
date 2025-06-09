@@ -2,12 +2,12 @@
 import React, { useState } from 'react';
 import ADRForm from './ADRForm';
 import Chatbot from './Chatbot';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for logout redirect
+//import { useNavigate } from 'react-router-dom'; // Import useNavigate for logout redirect
 //import { Form } from 'lucide-react'; // Example icon for form, though ADRForm uses MessageCircle
 
 const MainAppContent = ({ currentUser, onLogout }) => {
     const [view, setView] = useState('form'); // 'form' or 'chat'
-    const navigate = useNavigate(); // For redirecting to login on logout
+   // const navigate = useNavigate(); // For redirecting to login on logout
 
     const handleNavigateToChat = () => setView('chat');
     const handleNavigateToForm = () => setView('form');
